@@ -1,0 +1,11 @@
+[Unit]
+Description=UI Flyby
+
+[Service]
+ExecStart=/usr/bin/python -u /home/pi/ui_flyby/ui_flyby.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+Alias=faster-ads.service
